@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
-    if (process.env.ENV === "production") {
+    if (process.env.NEXT_PUBLIC_ENV === "production") {
       (window as any).gtag("config", "G-2NW1Y5GY0F", {
         page_title: router.pathname,
         page_location: `https://michaelnsandor.com${router.pathname}`,
@@ -25,11 +25,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main>
       <>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-2NW1Y5GY0F"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-2NW1Y5GY0F" />
+        <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
