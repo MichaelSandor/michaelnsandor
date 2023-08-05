@@ -25,8 +25,11 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main>
       <>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-2NW1Y5GY0F" />
-        <Script id="google-analytics">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-2NW1Y5GY0F"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
