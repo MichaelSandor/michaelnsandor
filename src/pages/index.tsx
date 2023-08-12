@@ -2,10 +2,6 @@ import Head from "next/head";
 
 import { ExternalLink } from "@/components";
 
-function FieldwireLink() {
-  return <ExternalLink href="https://www.fieldwire.com/" label="Fieldwire" />;
-}
-
 function Home() {
   return (
     <>
@@ -18,12 +14,21 @@ function Home() {
       </Head>
       <div className="flex flex-1 flex-col items-center justify-center">
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold">
-            Hello!
-          </h1>
+          <h1 className="text-4xl font-bold">Hello!</h1>
           <p className="text-lg">
-            My name is Michael Sandor and I am a fullstack engineer at{" "}
-            <FieldwireLink />.
+            My name is Michael Sandor and I am an engineer at{" "}
+            <ExternalLink href="https://www.fieldwire.com/" label="Fieldwire" />
+            . I am also working on{" "}
+            <ExternalLink
+              href="https://www.tech-resume.com/"
+              label="tech-resume.com"
+            />{" "}
+            and{" "}
+            <ExternalLink
+              href="https://www.rentdiscountcalculator.com/"
+              label="rentdiscountcalculator.com"
+            />
+            .
           </p>
         </div>
       </div>
