@@ -6,14 +6,14 @@
 import Link from "next/link";
 
 interface InternalLinkProps {
+  children: any;
   href: string;
-  label: string;
 }
 
 function InternalLink(props: InternalLinkProps) {
   return (
     <Link className="hover:underline" href={props.href}>
-      {props.label}
+      {props.children}
     </Link>
   );
 }

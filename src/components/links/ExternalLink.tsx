@@ -6,8 +6,8 @@
 import Link from "next/link";
 
 interface ExternalLinkProps {
+  children: any;
   href: string;
-  label: string;
 }
 
 function ExternalLink(props: ExternalLinkProps) {
@@ -18,7 +18,7 @@ function ExternalLink(props: ExternalLinkProps) {
       rel="noopener noreferrer"
       target="_blank"
     >
-      {props.label}
+      {props.children}
     </Link>
   );
 }
