@@ -4,9 +4,9 @@
 
 import { ExternalLink, InternalLink } from ".";
 
-interface LayoutProps {
+type LayoutProps = {
   children: any;
-}
+};
 
 function Layout(props: LayoutProps) {
   return (

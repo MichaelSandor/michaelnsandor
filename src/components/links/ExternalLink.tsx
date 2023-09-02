@@ -5,10 +5,10 @@
 
 import Link from "next/link";
 
-interface ExternalLinkProps {
+type ExternalLinkProps = {
   children: any;
   href: string;
-}
+};
 
 function ExternalLink(props: ExternalLinkProps) {
   return (
