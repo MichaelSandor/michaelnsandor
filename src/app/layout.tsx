@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import { Analytics } from "@vercel/analytics/react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -30,6 +31,7 @@ export default function RootLayout({
             </ExternalLink>
           </nav>
           {children}
+          <Analytics />
         </div>
       </body>
     </html>
