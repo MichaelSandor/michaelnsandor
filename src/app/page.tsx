@@ -15,9 +15,8 @@ export default function Home() {
       </p>
       <ul className="list-square list-inside">
         <li>
-          <ExternalLink href="https://www.rentdiscountcalculator.com/">
-            rentdiscountcalculator.com
-          </ExternalLink>
+          🚧 <span className="text-gray-400">rentdiscountcalculator.com</span>{" "}
+          🚧
         </li>
         <li>
           🚧 <span className="text-gray-400">tech-resume.com</span> 🚧
